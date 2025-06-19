@@ -30,7 +30,7 @@
     <CopyDocumentationFilesFromPackages>true</CopyDocumentationFilesFromPackages>
     <CopyDebugSymbolFilesFromPackages>true</CopyDebugSymbolFilesFromPackages>
     <NoWarn>$(NoWarn);NU1504;NU1505;NU1506;NU1701;1591</NoWarn>
-    <RootNamespace>Serilog.Enrichers.Xperiencey</RootNamespace>
+    <RootNamespace>Serilog.Enrichers.Xperience</RootNamespace>
 
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
     <TimestampServerUrl>http://timestamp.digicert.com</TimestampServerUrl>
