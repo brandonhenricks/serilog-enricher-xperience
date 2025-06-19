@@ -1,0 +1,14 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <CentralPackageVersionOverrideEnabled>false</CentralPackageVersionOverrideEnabled>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    <DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="[8.0.0.0,)" />
+    <PackageVersion Include="Kentico.Xperience.Core" Version="[30.0.0,)" />
+    <PackageVersion Include="Serilog" Version="[4.0.0,)" />
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="[8.0.0.0,)" />
+  </ItemGroup>
+</Project>
