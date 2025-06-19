@@ -32,6 +32,7 @@ namespace Serilog.Enrichers.Xperience.Enrichers
             }
 
             string contactId = $"{Constants.Xperience}.ContactId";
+
             int contactIdValue = currentContact.ContactID;
 
             if (contactIdValue > 0)
@@ -40,6 +41,7 @@ namespace Serilog.Enrichers.Xperience.Enrichers
             }
 
             string contactEmail = $"{Constants.Xperience}.ContactEmail";
+
             string contactEmailValue = currentContact.ContactEmail;
 
             if (!string.IsNullOrEmpty(contactEmailValue))

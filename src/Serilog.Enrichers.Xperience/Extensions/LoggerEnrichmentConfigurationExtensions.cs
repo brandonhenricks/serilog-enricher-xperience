@@ -25,8 +25,10 @@ namespace Serilog.Enrichers.Xperience.Extensions
             ArgumentNullException.ThrowIfNull(services);
 
             enrichmentConfiguration.With(new XperienceContactEnricher(services));
+            enrichmentConfiguration.With(new XperienceWebsiteChannelEnricher(services));
+            enrichmentConfiguration.With(new XperienceWebPageEnricher(services));
 
-            return enrichmentConfiguration.With(new XperienceWebsiteChannelEnricher(services));
+            return enrichmentConfiguration.With(new XperienceWebPageEnricher(services));
         }
 
         /// <summary>
@@ -65,6 +67,43 @@ namespace Serilog.Enrichers.Xperience.Extensions
             ArgumentNullException.ThrowIfNull(services);
 
             return enrichmentConfiguration.With(new XperienceWebsiteChannelEnricher(services));
+        }
+
+        /// <summary>
+        /// Enriches log events with Xperience web page information.
+        /// </summary>
+        /// <param name="enrichmentConfiguration">The logger enrichment configuration.</param>
+        /// <param name="services">The service provider used to resolve dependencies for the enricher.</param>
+        /// <returns>The logger configuration, enriched with the Xperience web page enricher.</returns>
+        /// <exception cref="ArgumentNullException">
+        /// Thrown if <paramref name="enrichmentConfiguration"/> or <paramref name="services"/> is <c>null</c>.
+        /// </exception>
+        public static LoggerConfiguration WithXperienceWebPageEnricher(
+            this LoggerEnrichmentConfiguration enrichmentConfiguration,
+            IServiceProvider services)
+        {
+            ArgumentNullException.ThrowIfNull(enrichmentConfiguration);
+            ArgumentNullException.ThrowIfNull(services);
+            return enrichmentConfiguration.With(new XperienceWebPageEnricher(services));
+        }
+
+
+        /// <summary>
+        /// Enriches log events with Xperience web farm server information.
+        /// </summary>
+        /// <param name="enrichmentConfiguration">The logger enrichment configuration.</param>
+        /// <param name="services">The service provider used to resolve dependencies for the enricher.</param>
+        /// <returns>The logger configuration, enriched with the Xperience web farm server enricher.</returns>
+        /// <exception cref="ArgumentNullException">
+        /// Thrown if <paramref name="enrichmentConfiguration"/> or <paramref name="services"/> is <c>null</c>.
+        /// </exception>s
+        public static LoggerConfiguration WithXperienceWebFarmEnricher(
+            this LoggerEnrichmentConfiguration enrichmentConfiguration,
+            IServiceProvider services)
+        {
+            ArgumentNullException.ThrowIfNull(enrichmentConfiguration);
+            ArgumentNullException.ThrowIfNull(services);
+            return enrichmentConfiguration.With(new XperienceWebFarmServerEnricher(services));
         }
     }
 }

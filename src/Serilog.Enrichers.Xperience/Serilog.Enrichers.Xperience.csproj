@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Kentico.Xperience.Core" />
+    <PackageReference Include="Kentico.Xperience.WebApp" />
   </ItemGroup>
 
 </Project>
