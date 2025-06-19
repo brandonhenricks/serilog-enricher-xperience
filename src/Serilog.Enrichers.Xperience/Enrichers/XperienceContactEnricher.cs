@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Serilog.Core;
 using Serilog.Events;
 
-namespace Serilog.Enrichers.Xperiencey.Enrichers
+namespace Serilog.Enrichers.Xperience.Enrichers
 {
     public class XperienceContactEnricher : ILogEventEnricher
     {

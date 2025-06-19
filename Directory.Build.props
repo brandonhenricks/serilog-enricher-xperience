@@ -9,8 +9,8 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Product>Serilog.Enrichers.Xperience</Product>
     <Title>$(Product)</Title>
-    <PackageProjectUrl>https://github.com/brandonhenricks/xperience-by-kentico-data-repository</PackageProjectUrl>
-    <PackageReleaseNotes>https://github.com/brandonhenricks/xperience-by-kentico-data-repository</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/brandonhenricks/serilog-enricher-xperience</PackageProjectUrl>
+    <PackageReleaseNotes>https://github.com/brandonhenricks/serilog-enricher-xperience</PackageReleaseNotes>
     <PackageIcon>logo.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageTags>xperience;kentico;aspnetcore;serilog;xperience-by-kentico</PackageTags>

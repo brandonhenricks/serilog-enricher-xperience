@@ -1,7 +1,7 @@
 ﻿using Serilog.Configuration;
-using Serilog.Enrichers.Xperiencey.Enrichers;
+using Serilog.Enrichers.Xperience.Enrichers;
 
-namespace Serilog.Enrichers.Xperiencey.Extensions
+namespace Serilog.Enrichers.Xperience.Extensions
 {
     /// <summary>
     /// Provides extension methods for <see cref="LoggerEnrichmentConfiguration"/> to add Xperience enrichers.
