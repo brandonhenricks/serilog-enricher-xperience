@@ -1,13 +1,13 @@
 name: "CI: Build and Test"
 
+permissions:
+  contents: read
+
 on:
   pull_request:
     branches: [main]
   push:
     branches: [main]
-
-jobs:
-  dotnet-format:
     name: .Net Format Check
     runs-on: ubuntu-latest
 
