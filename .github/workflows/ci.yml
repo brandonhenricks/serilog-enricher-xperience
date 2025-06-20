@@ -8,6 +8,9 @@ on:
     branches: [main]
   push:
     branches: [main]
+
+jobs:
+  dotnet-format:
     name: .Net Format Check
     runs-on: ubuntu-latest
 
