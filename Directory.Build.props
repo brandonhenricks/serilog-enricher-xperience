@@ -11,6 +11,7 @@
     <Title>$(Product)</Title>
     <PackageProjectUrl>https://github.com/brandonhenricks/serilog-enricher-xperience</PackageProjectUrl>
     <PackageReleaseNotes>https://github.com/brandonhenricks/serilog-enricher-xperience</PackageReleaseNotes>
+    <Description>Serilog.Enrichers.Xperience seamlessly integrates Xperience by Kentico context into your Serilog logs, giving you powerful, real-time insights into user activity, site behavior, and request data.</Description>
     <PackageIcon>logo.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageTags>xperience;kentico;aspnetcore;serilog;xperience-by-kentico</PackageTags>
@@ -22,7 +23,7 @@
   </ItemGroup>
 
   <PropertyGroup>
-    <TargetFramework>net8</TargetFramework>
+    <TargetFrameworks>net8;net9</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <WarningsAsErrors>nullable</WarningsAsErrors>

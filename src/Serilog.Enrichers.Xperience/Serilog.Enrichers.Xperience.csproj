@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net8</TargetFrameworks>
+    <TargetFrameworks>net8;net9</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
@@ -9,15 +9,11 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Serilog">
-		<PrivateAssets>all</PrivateAssets>
-	</PackageReference>
+    <PackageReference Include="Serilog" />
   </ItemGroup>
 
   <ItemGroup>
-	  <PackageReference Include="Kentico.Xperience.WebApp">
-		  <PrivateAssets>all</PrivateAssets>
-	  </PackageReference>
+	  <PackageReference Include="Kentico.Xperience.WebApp" />
   </ItemGroup>
 
 </Project>
